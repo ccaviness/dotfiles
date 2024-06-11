@@ -13,7 +13,7 @@ for font in "${fonts[@]}"; do
   curl -fSLO "${font}"
 done
 
-for f in *%20*; do 
+for f in *%20*; do
   mv "${f}" "${f//\%20/ }"
 done
 
@@ -23,5 +23,6 @@ rm ArrowType-Recursive-1.085.zip
 popd
 
 # Themes
-curl --output_dir ~ -fsSLO "https://raw.githubusercontent.com/catppuccin/sublime-text/main/Catppuccin%20Macchiato.sublime-color-scheme"
-curl --output_dir ~ -fsSLO "https://raw.githubusercontent.com/catppuccin/iterm/main/colors/catppuccin-macchiato.itermcolors"
+curl --output-dir ~ -fsSLO "https://raw.githubusercontent.com/catppuccin/sublime-text/main/Catppuccin%20Macchiato.sublime-color-scheme"
+curl --output-dir ~ -fsSLO "https://raw.githubusercontent.com/catppuccin/iterm/main/colors/catppuccin-macchiato.itermcolors"
+curl --output-dir .config/bat/themes -fsSLO "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Macchiato.tmTheme"

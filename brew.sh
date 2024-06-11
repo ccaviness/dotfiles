@@ -16,16 +16,19 @@ brew tap blacktop/tap
 # Install binaries
 brew install bat
 brew install diff-so-fancy
+brew install eza
+brew install fd
 brew install git
+brew install git-delta
+brew install jq
+brew install mypy
 brew install pstree
+brew install pylint
+brew install python
 brew install qemu
 brew install stow
 brew install tldr
 brew install tree
-brew install jq
-brew install python
-brew install pylint
-brew install mypy
 brew install zsh-syntax-highlighting
 
 # Install casks
@@ -42,6 +45,10 @@ $(brew --prefix)/opt/fzf/install
 
 # Install oh-my-zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Install fzt-git.sh
+git clone https://github.com/junegunn/fzf-git.sh.git ~/.fzf-git.sh
+
 
 # Remove outdated versions from the cellar
 brew cleanup
