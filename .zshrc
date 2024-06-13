@@ -169,8 +169,11 @@ _fzf_compgen_dir() {
 # fzf git integration
 source ~/.fzf-git.sh/fzf-git.sh
 
-# bat theme
+# bat
+# theme
 export BAT_THEME='Catppuccin%20Macchiato'
+# manpages
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # ---- Eza (better ls) -----
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
