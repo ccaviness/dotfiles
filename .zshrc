@@ -178,3 +178,9 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # ---- Eza (better ls) -----
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias lls="/bin/ls"
+
+
+# Use .venv for python
+if [[ -f ~/.venv/bin/activate ]]; then
+  PATH=~/.venv/bin:$PATH
+fi
