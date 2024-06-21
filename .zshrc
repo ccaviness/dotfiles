@@ -176,7 +176,7 @@ export BAT_THEME='Catppuccin%20Macchiato'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # ---- Eza (better ls) -----
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ls="eza --color=always --git --icons=always --oneline"
 alias lls="/bin/ls"
 
 
