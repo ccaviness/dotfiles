@@ -18,6 +18,7 @@ brew install bat
 brew install diff-so-fancy
 brew install eza
 brew install fd
+brew install finicky
 brew install fzf
 brew install git
 brew install git-delta
