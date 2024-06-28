@@ -6,12 +6,13 @@ module.exports = {
       match: [
         "hudson-trading.com/*",
         "*.hudson-trading.com/*",
+        "hrt*.jamfcloud.com/*",
       ],
       browser: {
         name: "Google Chrome",
         profile: "Default",
       },
-    }
+    },
     {
       match: ({ url }) => url.protocol === "slack",
       browser: "/Applications/Slack.app",
