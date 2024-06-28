@@ -18,7 +18,10 @@ source style.sh
 source symlinks.sh
 
 # # Set up colors/themes
-# source style.sh
+source style.sh
 
-# Update settings
+echo "Update symlinks"
+stow --restow .
+
+echo "Reload .zshrc"
 source ~/.zshrc

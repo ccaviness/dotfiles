@@ -2,3 +2,4 @@
 .config/zed/embeddings/semantic-index-db.0.mdb/*.mdb
 .config/zed/prompts/prompts-library-db.0.mdb/*.mdb
 .config/raycast/**
+.config/iterm2/**

@@ -1,18 +1,20 @@
-// Use https://finicky-kickstart.now.sh to generate basic configuration
-// Learn more about configuration options: https://github.com/johnste/finicky/wiki/Configuration
-
 module.exports = {
-  defaultBrowser: "Safari",
-/*
+  defaultBrowser: "Google Chrome",
   handlers: [
     {
-      // Open google.com and *.google.com urls in Google Chrome
+      // opeen Hudson Trading links in chrome "Default" profile
       match: [
-        "google.com*", // match google.com urls
-        finicky.matchDomains(/.*\.google.com/) // use helper function to match on domain only
+        "hudson-trading.com/*",
+        "*.hudson-trading.com/*",
       ],
-      browser: "Google Chrome"
+      browser: {
+        name: "Google Chrome",
+        profile: "Default",
+      },
     }
-  ]
-*/
-}
+    {
+      match: ({ url }) => url.protocol === "slack",
+      browser: "/Applications/Slack.app",
+    },
+  ],
+};
