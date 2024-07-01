@@ -2,11 +2,11 @@ module.exports = {
   defaultBrowser: "Google Chrome",
   handlers: [
     {
-      // opeen Hudson Trading links in chrome "Default" profile
+      // open Hudson Trading links in chrome "Default" profile
       match: [
         "hudson-trading.com/*",
         "*.hudson-trading.com/*",
-        "hrt*.jamfcloud.com/*",
+        "hrt*/*",
       ],
       browser: {
         name: "Google Chrome",
