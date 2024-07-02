@@ -1,5 +1,5 @@
 #!/bin/sh
 
 for d in */ ; do
-    stow --restow "${d}"
+    stow --verbose --restow "${d}"
 done
