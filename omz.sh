@@ -12,7 +12,7 @@ echo "Install p10k"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
 
 echo "Configure fzf"
-$(brew --prefix)/opt/fzf/install
+"$(brew --prefix)"/opt/fzf/install
 
 echo "Install fzt-git.sh"
 git clone https://github.com/junegunn/fzf-git.sh.git ~/.fzf-git.sh

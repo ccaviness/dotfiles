@@ -3,7 +3,7 @@
 echo "Setting up iTerm2 preferences..."
 if [ -d "/Applications/iTerm.app" ]; then
   # Specify the preferences directory
-  defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.config/iterm2_settings"
+  defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "${HOME}/.config/iterm2_settings"
 
   # Tell iTerm2 to use the custom preferences in the directory
   defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true

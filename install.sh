@@ -1,29 +1,37 @@
 #!/bin/sh
 
 echo "Setting up Mac..."
-mkdir -p "$HOME/.config"
+mkdir -p "${HOME}/.config"
+
+echo "Installing Xcode command line utils"
+xcode-select --install
+# sudo xcodebuild -license accept
 
 echo "Install homebrew"
 if ! brew --version ; then
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh || true)"
+    # shellcheck disable=SC2016
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "${HOME}"/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv || true)"
 fi
 
 echo "Install Homebrew formulae"
-source brew.sh
+. brew.sh
 
 echo "Install oh-my-zsh"
-source omz.sh
+. omz.sh
 
 echo "Set up colors/themes"
-source style.sh
+. style.sh
 
-# echo "Update symlinks"
+echo "Setting up defaults"
+. defaults.sh
+
 echo "Set up symlinks using stow"
-source symlinks.sh
+. symlinks.sh
 
-if [ -n "$ZSH_VERSION" ]; then
+if [ -n "${ZSH_VERSION}" ]; then
     echo "Reload .zshrc"
-    source ~/.zshrc
+    # shellcheck source=./zsh/.zshrc
+    . ~/.zshrc
 fi

@@ -16,6 +16,7 @@ brew tap blacktop/tap
 echo "Install binaries"
 brew install bat
 brew install diff-so-fancy
+brew install duti
 brew install eza
 brew install fd
 brew install finicky
@@ -45,6 +46,7 @@ brew install --cask wineskin
 brew install --cask hiddenbar
 brew install --cask secretive
 brew install --cask suspicious-package
+brew install --cask visual-studio-code
 
 # Fonts
 brew install --cask font-meslo-for-powerlevel10k
