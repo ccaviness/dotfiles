@@ -23,5 +23,7 @@ source style.sh
 echo "Set up symlinks using stow"
 source symlinks.sh
 
-echo "Reload .zshrc"
-source ~/.zshrc
+if [ -n "$ZSH_VERSION" ]; then
+    echo "Reload .zshrc"
+    source ~/.zshrc
+fi
