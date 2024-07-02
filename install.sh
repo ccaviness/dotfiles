@@ -14,14 +14,13 @@ source omz.sh
 echo "Install fonts and themes"
 source style.sh
 
-echo "Set up symlinks using stow"
-source symlinks.sh
-
 echo "Set up colors/themes"
 source style.sh
 
-echo "Update symlinks"
-stow --restow .
+# echo "Update symlinks"
+echo "Set up symlinks using stow"
+source symlinks.sh
+# stow --restow .
 
 echo "Reload .zshrc"
 source ~/.zshrc

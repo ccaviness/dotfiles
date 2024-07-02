@@ -35,11 +35,16 @@ brew install zsh-syntax-highlighting
 
 echo "Install casks"
 brew install --cask alt-tab
-brew install --cask git-credential-manager
-brew install --cask hiddenbar
 brew install --cask iterm2
-brew install --cask raycast
 brew install --cask stats
+brew install --cask whisky
+brew install --cask git-credential-manager
+brew install --cask raycast
+brew install --cask steamcmd
+brew install --cask wineskin
+brew install --cask hiddenbar
+brew install --cask secretive
+brew install --cask suspicious-package
 
 # Remove outdated versions from the cellar
 brew cleanup
