@@ -175,6 +175,10 @@ export BAT_THEME='Catppuccin%20Macchiato'
 # manpages
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
+# Global aliases to colorize --help output
+alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
+alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
+
 # ---- Eza (better ls) -----
 alias ls="eza --color=always --git --icons=always --oneline"
 alias lls="/bin/ls"
