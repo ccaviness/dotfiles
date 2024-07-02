@@ -32,6 +32,6 @@ echo "Set up symlinks using stow"
 
 if [ -n "${ZSH_VERSION}" ]; then
     echo "Reload .zshrc"
-    # shellcheck source=./zsh/.zshrc
-    . ~/.zshrc
+    # shellcheck source=zsh/.zshrc
+    . "${HOME}"/.zshrc
 fi
