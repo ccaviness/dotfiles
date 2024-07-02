@@ -46,5 +46,9 @@ brew install --cask hiddenbar
 brew install --cask secretive
 brew install --cask suspicious-package
 
+# Fonts
+brew install --cask font-meslo-for-powerlevel10k
+brew install --cask font-recursive-code
+
 # Remove outdated versions from the cellar
 brew cleanup

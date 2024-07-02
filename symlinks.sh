@@ -1,7 +1,5 @@
 #!/bin/sh
 
-stow --restow
-for d in `ls -d */`;
-do
-    ( stow --restow $d )
+for d in */ ; do
+    stow --restow "${d}"
 done
