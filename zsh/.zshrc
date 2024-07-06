@@ -112,6 +112,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+alias ts=tailscale
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -188,3 +189,4 @@ alias lls="/bin/ls"
 if [[ -f ~/.venv/bin/activate ]]; then
   PATH=~/.venv/bin:$PATH
 fi
+
