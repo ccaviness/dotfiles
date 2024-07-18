@@ -191,4 +191,3 @@ alias lls="/bin/ls"
 if [[ -f ~/.venv/bin/activate ]]; then
   PATH=~/.venv/bin:$PATH
 fi
-
