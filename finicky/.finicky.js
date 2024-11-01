@@ -7,6 +7,7 @@ module.exports = {
         "hudson-trading.com/*",
         "*.hudson-trading.com/*",
         "hrt*/*",
+        "crimson-firefly-2845.*",
       ],
       browser: {
         name: "Google Chrome",

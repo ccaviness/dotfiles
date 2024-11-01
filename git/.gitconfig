@@ -33,3 +33,5 @@
 	useHttpPath = true
 [url "git@phabricator.hudson-trading.com:"]
 	insteadof = https://phabricator.hudson-trading.com
+[safe]
+	directory = /usr/local/hrt-localcoding
