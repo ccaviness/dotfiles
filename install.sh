@@ -16,18 +16,23 @@ if ! brew --version ; then
 fi
 
 echo "Install Homebrew formulae"
+# shellcheck source=brew.sh
 . brew.sh
 
 echo "Install oh-my-zsh"
+# shellcheck source=omz.sh
 . omz.sh
 
 echo "Set up colors/themes"
+# shellcheck source=style.sh
 . style.sh
 
 echo "Setting up defaults"
+# shellcheck source=defaults.sh
 . defaults.sh
 
 echo "Set up symlinks using stow"
+# shellcheck source=symlinks.sh
 . symlinks.sh
 
 if [ -n "${ZSH_VERSION}" ]; then
