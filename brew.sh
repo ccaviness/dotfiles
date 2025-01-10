@@ -15,17 +15,21 @@ brew tap blacktop/tap
 
 echo "Install binaries"
 brew install bat
+brew install blacktop/tap/ipsw
 brew install diff-so-fancy
 brew install duti
 brew install eza
 brew install fd
 brew install finicky
 brew install fzf
+brew install gh
 brew install git
 brew install git-delta
 brew install htop
 brew install jq
+brew install mosh
 brew install mypy
+brew install neofetch
 brew install pstree
 brew install pylint
 brew install python
@@ -38,18 +42,18 @@ brew install tree
 brew install zsh-syntax-highlighting
 
 echo "Install casks"
-brew install --cask alt-tab
-brew install --cask iterm2
-brew install --cask stats
-brew install --cask whisky
 brew install --cask git-credential-manager
+brew install --cask iterm2
 brew install --cask jordanbaird-ice
 brew install --cask raycast
 brew install --cask rectangle
 brew install --cask secretive
+brew install --cask stats
 brew install --cask steamcmd
 brew install --cask suspicious-package
+brew install --cask the-unarchiver
 brew install --cask visual-studio-code
+brew install --cask whisky
 brew install --cask wineskin
 
 # Fonts
