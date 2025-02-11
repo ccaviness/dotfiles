@@ -5,6 +5,7 @@
 [core]
     pager = delta
 	editor = code --wait
+	excludesFile = ~/.gitignore
 
 [interactive]
     diffFilter = delta --color-only
