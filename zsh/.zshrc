@@ -82,7 +82,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git)
-plugins=( git zsh-syntax-highlighting zsh-autosuggestions ohmyzsh-full-autoupdate )
+plugins=( git zsh-syntax-highlighting zsh-autosuggestions ohmyzsh-full-autoupdate fzf-tab )
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
