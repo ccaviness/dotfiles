@@ -38,5 +38,8 @@
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 
-[includeIf "hasconfig:remote.*.url:**/hudson-trading.com/**"]
+[includeIf "hasconfig:remote.*.url:*://*@*hudson-trading.com/**"]
+    path = ~/.gitconfig-work
+
+[includeIf "gitdir:~/work/"]
     path = ~/.gitconfig-work
