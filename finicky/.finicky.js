@@ -10,6 +10,7 @@ export default {
         "crimson-firefly-2845.*",
         "app.kolide.com/*",
         "app.glean.com/*",
+        "hudson-trading*/*"
       ],
       browser: {
         name: "Google Chrome",
